@@ -1,0 +1,91 @@
+$global-font-icon: 'myicons';
+
+@font-face {
+ font-family: $global-font-icon;
+ src:url("../fonts/myicons.eot");
+ src:url("../fonts/myicons.?#iefix") format("embedded-opentype"),
+   url("../fonts/myicons.woff") format("woff"),
+   url("../fonts/myicons.woff2") format("woff2"),
+   url("../fonts/myicons.ttf") format("truetype"),
+   url("../fonts/myicons.#myicons") format("svg");
+ font-weight: normal;
+ font-style: normal;
+}
+
+.icon {
+ font-family: $global-font-icon;
+ width: 50px;
+ margin: 0 auto;
+
+ &:before {
+   /* Some common icon stuff */
+   font-size: 50px;
+ }
+
+ &.icon--icon1 {
+   &:before {
+     content: $icon-icon1;
+   }
+ }
+ &.icon--icon2 {
+   &:before {
+     content: $icon-icon2;
+   }
+ }
+ &.icon--icon3 {
+   &:before {
+     content: $icon-icon3;
+   }
+ }
+ &.icon--icon4 {
+   &:before {
+     content: $icon-icon4;
+   }
+ }
+ &.icon--icon5 {
+   &:before {
+     content: $icon-icon5;
+   }
+ }
+ &.icon--icon6 {
+   &:before {
+     content: $icon-icon6;
+   }
+ }
+ &.icon--icon7 {
+   &:before {
+     content: $icon-icon7;
+   }
+ }
+ &.icon--icon8 {
+   &:before {
+     content: $icon-icon8;
+   }
+ }
+ &.icon--icon9 {
+   &:before {
+     content: $icon-icon9;
+   }
+ }
+ &.icon--logo {
+   &:before {
+     content: $icon-logo;
+   }
+ }
+ &.icon--mobile {
+   &:before {
+     content: $icon-mobile;
+   }
+ }
+ &.icon--qwer {
+   &:before {
+     content: $icon-qwer;
+   }
+ }
+ &.icon--settings {
+   &:before {
+     content: $icon-settings;
+   }
+ }
+
+}

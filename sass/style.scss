@@ -1,0 +1,95 @@
+// @import 'foundation';
+// @import 'settings';
+
+// @include foundation-flex-grid;
+// @include foundation-typography;
+// @include foundation-forms;
+// @include foundation-button;
+// @include foundation-accordion;
+
+@import 'icons/iconfont-varible';
+@import 'icons/iconfont-icon';
+
+@import 'components/all';
+
+
+
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+
+.logo {
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(red, 0.5);
+	margin: 0 auto;
+
+	&:after {
+		font-family: 'myicons';
+		content: $icon-logo;
+		font-size: 100px;
+		color: green;
+	}
+}
+
+.person {
+	color: rgba($primary-color, 0.5);
+
+	&__hand {
+		@extend %h1;
+		display: flex;
+
+		&:hover {
+			color: #000;
+		}
+
+		.is-alex & {
+			color: #000;
+		}
+	}
+
+	&__leg {
+		display: none;
+
+		.person--is-black & {
+			color: #000;
+		}
+	}
+
+	&.is-black {
+		color: #000;
+
+		.person__hand {
+			color: #000;
+		}
+	}
+
+	&.person--is-black {
+		color: #f00;
+
+		.person__hand {}
+	}
+}
+
+%h1,
+.heading {
+	font-size: 20px;
+}
+
+
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.message {
+  @extend %message-shared;
+}
