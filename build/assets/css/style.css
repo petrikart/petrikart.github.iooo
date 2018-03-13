@@ -280,7 +280,7 @@ h1 {
 .outer-menu {
     position: fixed;
     top: 10vh;
-    left: 94%;
+    left: 90%;
     z-index: 1;
 }
 .outer-menu .checkbox-toggle {
