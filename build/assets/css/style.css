@@ -6,6 +6,10 @@
   font-weight: normal;
   font-style: normal; }
 
+.main{
+  margin: 0;
+}
+
 .icon {
   font-family: "myicons";
   width: 50px;
