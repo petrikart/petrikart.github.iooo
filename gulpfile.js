@@ -19,7 +19,7 @@ gulp.task('sass', function () {
         }).on('error', sass.logError))
         .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
         .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest('_build/assets/css'))
+        .pipe(gulp.dest('build/assets/css'))
         .pipe(browser.stream({match: '**/*.css'}));
 });
 
@@ -43,14 +43,14 @@ gulp.task("build:icons", function() {
             }))
             .pipe(gulp.dest("./sass/icons/"));//generated scss files with classes
       })
-      .pipe(gulp.dest("_build/assets/fonts/"));//icon font destination
+      .pipe(gulp.dest("build/assets/fonts/"));//icon font destination
 });
 
 
 gulp.task('image-min', function() {
       gulp.src('src/images/*')
         .pipe(imagemin())
-        .pipe(gulp.dest('_build/assets/images'))
+        .pipe(gulp.dest('build/assets/images'))
   }
 );
 

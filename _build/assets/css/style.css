@@ -193,6 +193,18 @@
       font-size: 20px;
       position: relative; }
 
+.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: 'Questrial', sans-serif;
+  font-size: 40px;
+  padding: 80px;
+  text-align: center; }
+
 body {
   font: 100% Helvetica, sans-serif;
   color: #333; }
