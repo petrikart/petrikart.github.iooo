@@ -230,10 +230,6 @@
 .content__item:hover .animation {
   opacity: 1; }
 
-@media only screen and (max-device-width: 700px) {
-  .title__h2 {
-    color: #3adb76; } }
-
 .flex-center {
   display: -webkit-box;
   display: -ms-flexbox;
